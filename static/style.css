@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.frame {
+  width: 300px;
+  margin: 0 40px;
+  padding: 40px;
+  box-shadow: rgba(0,0,0,.3) 0 4px 12px;
+  border-radius: 4px;
+}
+
+.hint {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0,0,0,.38);
+}
+
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: rgba(0,0,0,.3) 1px solid;
+  width: 100%;
+  font-size: 24px;
+  line-height: 40px;
+  color: rgba(0,0,0,.87);
+}
+
+.hidden-hint {
+  opacity: 0;
+}
+
+.selection {
+  display: flex;
+  margin-top: 4px;
+}
+
+.choice {
+  text-align: center;
+  margin-right: 10px;
+  padding: 10px;
+  flex: 1;
+  cursor: pointer;
+
+  background: #EEE;
+  color: rgba(0,0,0,.54);
+
+  transition: color .2s ease, background .2s ease;
+}
+
+.choice:last-child {
+  margin-right: 0;
+}
+
+.choice.selected {
+  background: #CCC;
+  color: rgba(0,0,0,.87);
+}
+
+.choice:hover {
+  color: rgba(0,0,0,.87);
+}
+
+.spacer {
+  height: 20px;
+}
+
+.hint.error + .spacer {
+  height: 2px;
+}

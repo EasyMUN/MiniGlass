@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MiniGlass</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="hint">您的邮箱</div>
+      <input oninput="emailChanged()" placeholder="me@example.com" id="input">
+      <div class="hint email-error hidden-hint">此邮箱已被占用</div>
+
+      <div class="spacer"></div>
+
+      <div class="hint">您报名的峰会</div>
+      <div class="selection">
+        <div class="choice selected north master" onclick="conf('north')">北方峰会</div>
+        <div class="choice south master" onclick="conf('south')">南方峰会</div>
+      </div>
+    </div>
+  </body>
+</html>

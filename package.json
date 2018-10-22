@@ -1,0 +1,15 @@
+{
+  "name": "MiniGlass",
+  "version": "1.0.0",
+  "author": "Liu Xiaoyi",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.3",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.3.5"
+  },
+  "scripts": {
+    "start": "node --experimental-modules main.mjs"
+  }
+}
